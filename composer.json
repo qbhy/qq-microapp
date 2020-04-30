@@ -1,0 +1,37 @@
+{
+    "name": "96qbhy/qq-microapp",
+    "description": "QQ小程序sdk",
+    "keywords": [
+        "QQ小程序",
+        "小程序sdk",
+        "qbhy"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "qbhy",
+            "email": "96qbhy@gmail.com"
+        }
+    ],
+    "require": {
+        "hanson/foundation-sdk": "^3.0",
+        "ext-json": "*",
+        "php": ">=7.0",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qbhy\\QqMicroApp\\": "src/"
+        },
+        "files": [
+            "src/Support/helper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qbhy\\QqMicroApp\\LaravelServiceProvider"
+            ]
+        }
+    }
+}
