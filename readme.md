@@ -39,5 +39,6 @@ var_dump($app->decrypt->decrypt('encrypted data', 'session key', 'iv')); // 敏�
 var_dump($app->payment); // 支付暂未开发
 ```
 
+php吹水交流群请添加: 873213948  
 https://github.com/qbhy/qq-microapp  
 96qbhy@gmail.com
