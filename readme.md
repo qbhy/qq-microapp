@@ -8,6 +8,9 @@ QQ小程序服务端API官方文档 [点击前往](https://q.qq.com/wiki/develop
 * 支持 `composer` 安装
 * 支持 laravel/lumen 框架
 
+## 相关资源
+* 字节跳动小程序php-sdk https://github.com/qbhy/tt-microapp
+
 ## 安装 - install
 ```bash
 $ composer require 96qbhy/qq-microapp 
