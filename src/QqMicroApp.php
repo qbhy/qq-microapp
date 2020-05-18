@@ -36,4 +36,15 @@ class QqMicroApp extends Foundation
     {
         return $this->getConfig('secret_key');
     }
+
+    public function getMchId()
+    {
+        return $this->getConfig('mch_id');
+    }
+
+    public function getMchKey()
+    {
+        return $this->getConfig('mch_key');
+    }
+
 }

@@ -17,7 +17,9 @@
         "hanson/foundation-sdk": "^3.0",
         "ext-json": "*",
         "php": ">=7.0",
-        "ext-openssl": "*"
+        "ext-openssl": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*"
     },
     "autoload": {
         "psr-4": {
