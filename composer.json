@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "hanson/foundation-sdk": "^3.0",
+        "hanson/foundation-sdk": "^4.0",
         "ext-json": "*",
         "php": ">=7.1",
         "ext-openssl": "*",
