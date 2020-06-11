@@ -41,7 +41,11 @@ class LaravelServiceProvider extends BaseServiceProvider
         $this->setupConfig();
 
         $this->app->singleton(QqMicroApp::class, function ($app) {
-            return new QqMicroApp(config('qq-app'));
+            return $app->make(Factory::class)->make();
+        });
+
+        $this->app->singleton(Factory::class, function ($app) {
+            return new Factory(config('qq-app'));
         });
 
         $this->app->alias(QqMicroApp::class, 'qq.app');
