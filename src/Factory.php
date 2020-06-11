@@ -30,7 +30,7 @@ class Factory
             throw new QqMicroAppException("Undefined {$name} application");
         }
 
-        $config = $this->config['drivers'][$name];
+        $config = $config ?? $this->config['drivers'][$name];
 
         if (empty($config['debug'])) {
             $config['debug'] = $this->config['debug'] ?? true;

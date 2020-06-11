@@ -31,6 +31,22 @@ $app = new \Qbhy\QqMicroApp\QqMicroApp([
     'cache' => $redisCache, // 可选参数，你也可以用 \Doctrine\Common\Cache\ 下面得其他缓存驱动，比如 sqlite 等
 ]);
 
+$factory = new \Qbhy\QqMicroApp\Factory([
+    'debug' => true,
+    'default' => 'default', // 默认应用
+    'drivers' => [
+        'default' => [
+            'access_key' => 'your app id',
+            'secret_key' => 'your app secret',
+            'mch_id' => 'your merchant id',
+            'mch_key' => 'your merchant key',
+        ],
+    ],
+]);
+
+$otherApp = $factory->make('default');
+
+
 var_dump($app->access_token->getToken()); // 获取 access token
 var_dump($app->auth->session('client code')); // 获取 登录
 var_dump($app->temp_msg->send('openid', 'template id', 'form id', [], 'page')); //模板消息
